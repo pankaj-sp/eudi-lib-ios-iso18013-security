@@ -178,7 +178,7 @@ struct MdocSecurity18013Tests {
 		let (_,sessionEncr) = try #require(try makeSessionEncryptionFromAnnexData())
         let dr = try DeviceRequest(data: AnnexdTestData.request_d411.bytes)
         #if canImport(EudiEtsi1196x2)
-        let slts = StaticListTrustSource(rootCertificates: [AnnexdTestData.d54_readerRoot])
+        let slts = StaticListTrustSource(rootCertificates: [AnnexdTestData.d54_readerRoot], crlChecker: UnknownCrlChecker())
         let trustValidator = EtsiTrustManager(source: .staticList(slts))
         #else
         let trustValidator = SecTrustSource(rootIaca: [[AnnexdTestData.d54_readerRoot]], usage: .mdocAuth, revocationPolicy: .warning)

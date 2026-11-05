@@ -42,8 +42,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "EudiEtsi1196x2",
-            url: "https://github.com/german-national-wallet/eudi-lib-kmp-etsi-1196x2/releases/download/v0.4.0-alpha.5-crl.1/EudiEtsi1196x2.xcframework.zip",
-            checksum: "03899603eae7b9b05af7a5ad5caae130efbe8af7da57f0161c2c7647e5c949ef"
+            url: "https://github.com/german-national-wallet/eudi-lib-kmp-etsi-1196x2/releases/download/v0.4.0-alpha.5-crl.2/EudiEtsi1196x2.xcframework.zip",
+            checksum: "14cbacb69c0a258751a996b0f2a244fbc11e8c2000ef9748f55020a459d2eaed"
         )
     ]
 )
